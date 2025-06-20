@@ -104,9 +104,12 @@ const PricingPage: React.FC = () => {
             <Link href="/pricing" className="text-white font-semibold">
               Pricing
             </Link>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105">
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 inline-block"
+            >
               Get Started Free
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -206,11 +209,14 @@ const PricingPage: React.FC = () => {
                 ))}
               </div>
 
-              <button
-                className={`w-full py-4 rounded-lg text-lg font-semibold transition-all duration-200 transform hover:scale-105 ${plan.buttonStyle}`}
+              <Link
+                href={
+                  plan.name === "Enterprise" ? "/contact" : "/auth/register"
+                }
+                className={`w-full py-4 rounded-lg text-lg font-semibold transition-all duration-200 transform hover:scale-105 ${plan.buttonStyle} inline-block text-center`}
               >
                 {plan.buttonText}
-              </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -293,12 +299,18 @@ const PricingPage: React.FC = () => {
             Vibecoder Pal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl">
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl inline-block"
+            >
               Start Free Trial
-            </button>
-            <button className="border-2 border-purple-400 text-purple-400 px-10 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all duration-200">
+            </Link>
+            <Link
+              href="/contact"
+              className="border-2 border-purple-400 text-purple-400 px-10 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all duration-200 inline-block"
+            >
               Contact Sales
-            </button>
+            </Link>
           </div>
         </div>
       </section>

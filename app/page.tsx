@@ -26,9 +26,12 @@ const HomePage: React.FC = () => {
             >
               Pricing
             </Link>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105">
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 inline-block"
+            >
               Get Started Free
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -49,9 +52,12 @@ const HomePage: React.FC = () => {
             handle the heavy lifting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl">
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl inline-block"
+            >
               Start Learning for Free
-            </button>
+            </Link>
             <button className="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all duration-200">
               Watch Demo
             </button>
@@ -241,9 +247,12 @@ const HomePage: React.FC = () => {
             better with Vibecoder Pal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl">
+            <Link
+              href="/auth/register"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-2xl inline-block"
+            >
               Get Started for Free
-            </button>
+            </Link>
             <Link
               href="/pricing"
               className="border-2 border-purple-400 text-purple-400 px-10 py-4 rounded-lg text-lg font-semibold hover:bg-purple-400 hover:text-white transition-all duration-200 inline-block"
